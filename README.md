@@ -1,4 +1,5 @@
-# 🤖 Neural Storyteller: Image Captioning with Seq2Seq
+## 🖼️ Neural Storyteller - Image Captioning with Deep Learning
+An end-to-end deep learning system that generates natural language descriptions for images using CNN-LSTM architecture trained on the Flickr30k dataset.
 
 Kaggle Notebook: https://www.kaggle.com/code/ghanishah/neural-storyteller-image-captioning-with-seq2seq
 
@@ -8,6 +9,17 @@ HuggingFace: https://huggingface.co/spaces/syedghani/neural-storyteller
 An end-to-end Generative AI pipeline that "sees" an image and "tells" its story. This project implements a **CNN-RNN Encoder-Decoder architecture** trained on the **Flickr30k** dataset to automate image description.
 
 ---
+## What is Neural Storyteller?
+Neural Storyteller is a Generative AI pipeline that bridges the gap between computer vision and natural language processing. Upload an image, and the AI "sees" its content and "tells" you a descriptive story in natural language.
+Built on a CNN-RNN Encoder-Decoder architecture and trained on the Flickr30k dataset (31,783 images with human-written captions), this project demonstrates state-of-the-art image captioning techniques.
+✨ Key Highlights
+
+🎨 Automatic Image Understanding — Extracts semantic features from any image
+📝 Natural Language Generation — Produces human-like descriptive captions
+🚀 Production-Ready Deployment — Live web interface on HuggingFace Spaces
+📊 Comprehensive Evaluation — Validated with BLEU metrics and visual analysis
+⚡ GPU-Optimized Training — Efficient feature extraction and model training
+
 
 ## 🏗️ Architecture Overview
 
@@ -62,13 +74,13 @@ The model is deployed via a **Gradio** web interface. To launch it locally:
    pip install torch torchvision gradio pillow nltk pandas
 2. **Execute:**
 
-Bash
-python app.py
-Project Structure
-Neural Storyteller.ipynb: The complete training and evaluation pipeline.
-
-app.py: Gradio interface for real-time inference.
-
-flickr30k_features.pkl: Pre-extracted image features (Global average pooling).
+   Bash
+   python app.py
+   Project Structure
+   Neural Storyteller.ipynb: The complete training and evaluation pipeline.
+   
+   app.py: Gradio interface for real-time inference.
+   
+   flickr30k_features.pkl: Pre-extracted image features (Global average pooling).
 
 ### Author: Syed Ghani
